@@ -30,7 +30,7 @@
 
 .arrow {
     padding: 1em;
-    animation: arrow_slide 0.5s ease-in-out infinite;
+    animation: arrow_slide 1.2s ease-in-out infinite;
 }
 
 .text-english {
