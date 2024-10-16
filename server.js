@@ -36,7 +36,9 @@ server.on('request', function(req, res) {
     }
 
     // リクエストされたURLに基づいてファイルパスを設定
-    if (urlParts[2] === 'client.html') {
+    if (urlParts[2] === 'blanc.html') {
+        filePath = 'blanc.html';
+    } else if (urlParts[2] === 'client.html') {
         filePath = 'client.html';
     } else if (urlParts[2] === 'client.css') {
         filePath = 'client.css';
