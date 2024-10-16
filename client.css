@@ -1,0 +1,70 @@
+
+/* 個々の要素の定義 */
+
+/* 特に "display" "position" "z-index" 値を編集しないようにする。 */
+/* 画面中央に要素を固定するために必要。 */
+
+.animate-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 940px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    max-width: 720px;
+    padding-top: 1em;
+}
+
+#formbox {
+    background-color: rgb(255, 240, 217);
+    border-radius: 5px;
+    height: 1280px;
+    margin: 0 1em;
+    padding: 1em;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+/* アニメーション */
+
+/* 概説 */
+
+/* 'eventsAnimationConnected' -> 'eventsAnimationPull' -> 'eventsAnimationThrow' -> 'eventsAnimationEnd' -> 'eventsAnimationReset' */
+
+/* .fader が白から透明へ遷移するアニメーション。'eventsAnimationConnected' 送信時に再生される。 */
+/* .fader が透明から白へ遷移するアニメーション。'eventsAnimationEnd' 送信時に再生される。 */
+
+/* .hand が等速で少し上へ移動するアニメーション。'eventsAnimationConnected' 送信時に再生される。 */
+/* .hand がイージング移動でゆっくりと少し上へ遷移するアニメーション。'eventsAnimationPull' 送信時に再生される。 */
+/* .hand がイージング移動で素早く少し下へ遷移するアニメーション。'eventsAnimationThrow' 送信時に再生される。 */
+/* .hand の位置を初期状態へ戻すアニメーション。'animation_reset' 送信時に再生される。 */
+
+/* .form-box が等速で少し上へ移動するアニメーション。'eventsAnimationConnected' 送信時に再生される。 */
+/* .form-box がイージング移動でゆっくりと少し上へ遷移するアニメーション。'eventsAnimationPull' 送信時に再生される。 */
+/* .form-box がイージング移動で素早く上から画面外下へ遷移するアニメーション。'eventsAnimationThrow' 送信時に再生される。 */
+/* .form-box の位置を初期状態へ戻すアニメーション。'eventsAnimationReset' 送信時に再生される。 */
+
+
+/* 仕様メモ */
+
+/* 以下、3パラメータを制御してアニメーションさせる。*/
+
+/* .fader の opacity 値 -> 画面全体に白い暗幕を張って見えなくする。アニメーション開始時はこの値が 1 から 0 へ遷移し、ゆっくりと暗幕が消える。*/
+/* .hand の top 値 -> 両手のY座標に対応している。 */
+/* .form-box の top 値 -> フォームのY座標に対応している。*/
+
+.formbox-init {
+    top: -1500px;
+}
+
+.formbox-eventsAnimationThrow {
+    top: 0px;
+    transition: top 1.5s;
+}
+
+.formbox-Reload {
+    top: 0px;
+}
