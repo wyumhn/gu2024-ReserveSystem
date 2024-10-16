@@ -19,7 +19,7 @@ app.use((req, res, next) => {
     next();
 });
 
-const server = https.createServer();
+const server = http.createServer();
 
 server.on('request', function(req, res) {
     let filePath = '';
