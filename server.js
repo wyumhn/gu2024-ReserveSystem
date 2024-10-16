@@ -1,5 +1,5 @@
 const fs = require('fs');
-const https = require('https');
+const http = require('http');
 const url = require('url');
 const express = require('express');
 const app = express();
@@ -19,7 +19,7 @@ app.use((req, res, next) => {
     next();
 });
 
-const server = https.createServer(options);
+const server = https.createServer();
 
 server.on('request', function(req, res) {
     let filePath = '';
