@@ -11,13 +11,13 @@ const generatedUuid = `21e7fc77-d480-485b-a9a1-c422ba8b364f`;
 
 // HTTP -> HTTPSにリダイレクトする
 // 検索エンジンによるインデックス登録を拒否
-app.use((req, res, next) => {
-    if (req.headers['x-forwarded-proto'] !== 'https') {
-        return res.redirect('https://' + req.headers.host + req.url);
-    }
-    res.set('X-Robots-Tag', 'noindex, nofollow');
-    next();
-});
+//app.use((req, res, next) => {
+//    if (req.headers['x-forwarded-proto'] !== 'https') {
+//        return res.redirect('https://' + req.headers.host + req.url);
+//    }
+//    res.set('X-Robots-Tag', 'noindex, nofollow');
+//    next();
+//});
 
 const server = http.createServer();
 
@@ -52,6 +52,10 @@ server.on('request', function(req, res) {
         filePath = 'master.js';
     } else if (urlParts[2] === 'spinner.gif') {
         filePath = 'spinner.gif';
+    } else if (urlParts[2] === 'arrowdown.svg') {
+        filePath = 'arrowdown.svg';
+    } else if (urlParts[2] === 'hand.svg') {
+        filePath = 'hand.svg';
     } else {
         // それ以外のURLは404エラーページを返す
         res.writeHead(404, {'Content-Type': 'text/html'});
