@@ -7,32 +7,49 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap">
         <link rel="stylesheet" href="master.css">
         <script src="/socket.io/socket.io.js"></script>
         <script src="master.js"></script>
+        <!-- svg files made by FontAwesome.com https://fontawesome.com/ -->
+        <!-- produced under the license CC BY 4.0 https://creativecommons.org/licenses/by/4.0/deed.en -->
     </head>
     <body>
         <div class="wrapper">
             <div id="fader" class="fader-init">
                 <div class="idle-container">
-                    <i class="arrow fa-solid fa-arrow-down"></i>
+                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="-10 0 404 512">
+                        <g transform="matrix(1 0 0 -1 0 409)">
+                            <path fill="#000000" d="M169 -23q10 -9 23 -9v0v0q13 0 23 9l160 160v0q9 10 9 23t-9 23q-10 9 -23 9t-23 -9l-105 -106v0v307v0q0 14 -9 23t-23 9t-23 -9t-9 -23v-307v0l-105 106v0q-10 9 -23 9t-23 -9q-9 -10 -9 -23t9 -23l160 -160v0z" />
+                        </g>
+                    </svg>
                     <div class="reserve-message">
                         <p>予約はこちらから<br><span class="text-english">Check here to reserve.</span></p>
                     </div>
-                    <img class="arrow" src="arrowdown.svg">
+                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="-10 0 404 512">
+                        <g transform="matrix(1 0 0 -1 0 409)">
+                            <path fill="#000000" d="M169 -23q10 -9 23 -9v0v0q13 0 23 9l160 160v0q9 10 9 23t-9 23q-10 9 -23 9t-23 -9l-105 -106v0v307v0q0 14 -9 23t-23 9t-23 -9t-9 -23v-307v0l-105 106v0q-10 9 -23 9t-23 -9q-9 -10 -9 -23t9 -23l160 -160v0z" />
+                        </g>
+                    </svg>
                     <div class="img-container">
                         <img src="spinner.gif">
                     </div>
                 </div>
             </div>
             <div class="animate-container">
-                <i id="handleft" class="handleft-init"></i>
+                <svg id="handleft" class="handleft-init" xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="-10 0 522 512">
+                    <g transform="matrix(1 0 0 1 0 0) scale(-1, 1) translate(-500, 0)">
+                        <path fill="rgb(209, 125, 7)" d="M288 416q0 14 -9 23v0v0q-9 9 -23 9t-23 -9t-9 -23v-208v0q-1 -15 -16 -16q-15 1 -16 16v176v0q0 14 -9 23t-23 9t-23 -9t-9 -23v-272v0v-5l-60 58v0q-13 11 -29 11t-28 -12q-11 -13 -11 -29t12 -28l113 -107v0q67 -63 160 -64h19v0q75 2 124 52q50 49 52 124v208v0q0 14 -9 23t-23 9t-23 -9t-9 -23v-112v0q-1 -15 -16 -16q-15 1 -16 16v176v0q0 14 -9 23t-23 9t-23 -9t-9 -23v-176v0q-1 -15 -16 -16q-15 1 -16 16v208v0z" />
+                    </g>
+                </svg>
                 <div id="formbox" class="formbox-init">
                     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeG1zO5h-Oe4CFc5K45HOD81RsRFsjYtXh6qJqR77dhmKJfmQ/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" scrolling="no">読み込んでいます…</iframe>
                 </div>
-                <i id="handright" class="handright-init"></i>
+                <svg id="handright" class="handright-init" xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="-10 0 522 512">
+                    <g transform="scale(1, 1) translate(0, 0)">
+                        <path fill="rgb(209, 125, 7)" d="M288 416q0 14 -9 23v0v0q-9 9 -23 9t-23 -9t-9 -23v-208v0q-1 -15 -16 -16q-15 1 -16 16v176v0q0 14 -9 23t-23 9t-23 -9t-9 -23v-272v0v-5l-60 58v0q-13 11 -29 11t-28 -12q-11 -13 -11 -29t12 -28l113 -107v0q67 -63 160 -64h19v0q75 2 124 52q50 49 52 124v208v0q0 14 -9 23t-23 9t-23 -9t-9 -23v-112v0q-1 -15 -16 -16q-15 1 -16 16v176v0q0 14 -9 23t-23 9t-23 -9t-9 -23v-176v0q-1 -15 -16 -16q-15 1 -16 16v208v0z" />
+                    </g>
+                </svg>
             </div>
         </div>
     </body>

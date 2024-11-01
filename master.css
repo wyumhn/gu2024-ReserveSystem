@@ -29,7 +29,7 @@
 }
 
 .arrow {
-    padding: 1em;
+    padding: 0.4em;
     animation: arrow_slide 1.2s ease-in-out infinite;
 }
 
