@@ -38,6 +38,10 @@
     font-weight: 700;
 }
 
+.text-small {
+    font-size: 0.5em;
+}
+
 .text-english {
     font-size: 0.5em;
     font-weight: 500;
@@ -110,7 +114,7 @@
 }
 
 #formbox {
-    background-color: rgb(255, 240, 217);
+    background-color: rgb(240, 235, 248);
     border-radius: 5px;
     height: 1280px;
     padding: 1em;

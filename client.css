@@ -18,9 +18,9 @@
 }
 
 #formbox {
-    background-color: rgb(255, 240, 217);
+    background-color: rgb(240, 235, 248);
     border-radius: 5px;
-    height: 1280px;
+    height: 4280px;
     margin: 0 1em;
     padding: 1em;
     position: relative;
@@ -57,7 +57,7 @@
 /* .form-box の top 値 -> フォームのY座標に対応している。*/
 
 .formbox-init {
-    top: -1500px;
+    top: -4500px;
 }
 
 .formbox-eventsAnimationThrow {

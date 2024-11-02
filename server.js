@@ -52,10 +52,6 @@ server.on('request', function(req, res) {
         filePath = 'master.js';
     } else if (urlParts[2] === 'spinner.gif') {
         filePath = 'spinner.gif';
-    } else if (urlParts[2] === 'arrowdown.svg') {
-        filePath = 'arrowdown.svg';
-    } else if (urlParts[2] === 'hand.svg') {
-        filePath = 'hand.svg';
     } else {
         // それ以外のURLは404エラーページを返す
         res.writeHead(404, {'Content-Type': 'text/html'});
